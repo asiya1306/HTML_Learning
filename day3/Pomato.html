@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .form-wrapper {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            /* Optional: Set a maximum width to prevent the form from becoming too wide on large screens */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+            /* Adjust the value to set the spacing between input elements */
+        }
+
+        input,
+        textarea {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ff0000;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Email">
+            </div><br/>
+            <div class="form-row">
+                <input type="text" placeholder="Phone">
+            </div><br/>
+            <div class="form-row">
+                <textarea placeholder="Message"></textarea>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
