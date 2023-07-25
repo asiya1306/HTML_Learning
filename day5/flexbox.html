@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            column-gap: 20px;
+        }
+
+        .flexbox {
+            flex: 1;
+            height: 550px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* flex 1 */
+        .price-plan {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h2{
+            margin-left: 30px;
+            color: #0d408b;
+        }
+
+        .span-plan {
+            margin-right: 30px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: flex-start; /* Align button to the left */
+        }
+
+        .book-plan {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 11px;
+            border-radius: 8px;
+            font-size:12px;
+            margin-left: 30px;
+            margin-top:-10px;
+            margin-bottom: 10px;
+        }
+
+        /* flex 2 */
+        :root {
+            --borderWidth: 3px;
+            --height: 13px;
+            --width: 4px;
+            --borderColor: #0d408b;
+        }
+
+        .check-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .check {
+            display: inline-block;
+            transform: rotate(45deg);
+            height: var(--height);
+            width: var(--width);
+            border-bottom: var(--borderWidth) solid var(--borderColor);
+            border-right: var(--borderWidth) solid var(--borderColor);
+            margin-left: 30px;
+        }
+
+        .highlight-text {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        h1{
+            text-align:center;
+            color: #007bff;
+        }
+
+        .text-container{
+            margin: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flexbox">
+            <h1>Pricing Plan</h1>
+            <div class="price-plan">
+                <h2>200 Minutes</h2>
+                <span class="span-plan">RS 700/-</span>
+            </div>
+            <div class="button-container">
+                <button class="book-plan">Book Plan</button>
+            </div>
+            <div class="price-plan">
+                <h2>500 Minutes</h2>
+                <span class="span-plan">RS 1750/-</span>
+            </div>
+            <div class="button-container">
+                <button class="book-plan">Book Plan</button>
+            </div>
+            <div class="price-plan">
+                <h2>1000 Minutes</h2>
+                <span class="span-plan">RS 3300/-</span>
+            </div>
+            <div class="button-container">
+                <button class="book-plan">Book Plan</button>
+            </div>
+            <div class="price-plan">
+                <h2>2000 Minutes</h2>
+                <span class="span-plan">RS 6600/-</span>
+            </div>
+            <div class="button-container">
+                <button class="book-plan">Book Plan</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h1>Features</h1>
+            <div class="check-container">
+                <div class="check"></div>
+                <div class="text-container">
+                    <span class="highlight-text">24/7</span> doubt solving
+                </div>
+            </div>
+            <div class="check-container">
+                <div class="check"></div>
+                <div class="text-container">
+                    <span class="highlight-text">Unlimited Access</span> to our Instatnt AI doubt-solving bot Chatur
+                </div>
+            </div>
+            <div class="check-container">
+                <div class="check"></div>
+                <div class="text-container">
+                    doubt solving <span class="highlight-text">24/7</span> 
+                </div>
+            </div>
+            <div class="check-container">
+                <div class="check"></div>
+                <div class="text-container">
+                    <span class="highlight-text">24/7</span> doubt solving
+                </div>
+            </div>
+            <div class="check-container">
+                <div class="check"></div>
+                <div class="text-container">
+                    <span class="highlight-text">Unlimited Access</span> to our Instatnt AI doubt-solving bot Chatur
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more flexboxes here if needed -->
+    </div>
+</body>
+
+</html>
