@@ -1,0 +1,203 @@
+<html>
+
+<head>
+    <title>Side bar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* sidebar */
+
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            /* Make the links full width for easier click area */
+            padding: 5px 0;
+            /* Add some vertical padding for better clickability */
+            transition: background-color 0.2s;
+            /* Add transition for smooth hover effect */
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        /* table */
+        .tables-container {
+            flex: 1;
+            padding: 20px;
+            background-color: #ccc;
+            margin-top: 50px;
+        }
+
+        .table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-right: 20px;
+            background-color: white;
+        }
+
+        .table th,
+        .table td {
+            padding: 10px;
+            width: 50px;
+        }
+
+        .table th {
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+
+        .table td {
+            text-align: center;
+        }
+
+        .pending {
+            background-color: red;
+            padding: 2px 12px;
+            color: white;
+
+        }
+
+        .progress {
+            background-color: yellow;
+            padding: 2px 2px;
+            color: black;
+        }
+
+        .fixed {
+            background-color: purple;
+            padding: 2px 20px;
+            color: white;
+        }
+
+        .completed {
+            background-color: green;
+            padding: 2px 5px;
+            color: white;
+        }
+
+        .header {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .company-name {
+            font-size: 17px;
+            margin-left: 290px;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .navbar a {
+            color: rgb(14, 13, 13);
+            text-decoration: none;
+            padding: 10px;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">Asiya Shaikh</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header">
+            <div class="company-name">Welcome Asiya</div>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#vegetable">Blog</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </header>
+        <br />
+
+        <div class="tables-container">
+            <table class="table">
+                <tr>
+                    <th>Profile</th>
+                    <th>Vat No.</th>
+                    <th>Created</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Jocob</td>
+                    <td>11223344</td>
+                    <td>12 May 2020</td>
+                    <td><button class="pending">Pending</button></td>
+                </tr>
+                <tr>
+                    <td>Jocob</td>
+                    <td>11223344</td>
+                    <td>12 May 2020</td>
+                    <td><button class="progress">In Progress</button></td>
+                </tr>
+                <tr>
+                    <td>Jocob</td>
+                    <td>11223344</td>
+                    <td>12 May 2020</td>
+                    <td><button class="fixed">Fixed</button></td>
+                </tr>
+                <tr>
+                    <td>Jocob</td>
+                    <td>11223344</td>
+                    <td>12 May 2020</td>
+                    <td><button class="completed">Completed</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
