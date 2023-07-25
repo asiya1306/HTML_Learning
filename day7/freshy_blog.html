@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>Freshy Blog</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+        /* Prevent scrollbar due to background image */
+        height: 100vh;
+        /* Ensure the body takes up the full viewport height */
+    }
+
+    .fullscreen-bg {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /* Make the background image fullscreen */
+        background-image: url('v2.jpg');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+        color: rgb(12, 12, 12);
+    }
+
+    .box {
+        width: 798px;
+        height: 283px;
+        position: absolute;
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        background-color: green;
+        opacity: 0.7;
+        padding: 10px;
+    }
+
+    .box-img {
+        width: 247px;
+        height: 238px;
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(251 244 244);
+        /* opacity: 1; */
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+    }
+
+    .box1 {
+        color: #fff;
+    }
+
+    .text-container {
+        position: absolute;
+        top: 45%;
+        left: 46%;
+        transform: translate(-5%, -50%);
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="fullscreen-bg">
+        <div class="box"></div>
+        <div class="box-img"></div>
+        <img src="person.jpeg" />
+    </div>
+    <div class="text-container">
+        <h1>Jomono</h1>
+        <p>
+            It is a long established fact that a reader will be distracted by the <br />readable
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />Minus culpa quia fugit vel praesentium,
+            corporis, qui architecto <br />laborum minima quo explicabo ullam esse quasi omnis <br />laboriosam.
+            Eveniet tenetur quaerat esse.
+        </p>
+    </div>
+</body>
+
+</html>
