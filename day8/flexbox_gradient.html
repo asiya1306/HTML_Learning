@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>Gradient and Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            background-image: linear-gradient(to right, #218dd6, #38b29d);
+        }
+        hr {
+            border: 1px solid #ccc; /* Add border to the line */
+            margin: 20px 23; /* Adjust margin to control spacing around the line */
+        }
+
+        .flex-container {
+            display: flex;
+            column-gap: 20px;
+            justify-content: center;
+            /* Center the flex items horizontally */
+            align-items: center;
+            /* Center the flex items vertically */
+            height: 100%;
+            /* Ensure the container takes the full height of the screen */
+        }
+
+        /* first and third flexbox */
+        .flexbox {
+            flex-basis: 400px;
+            height: 450px;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+        .flexbox h1 {
+            text-align: center;
+            color: #000000;
+        }
+        .flex1-p {
+            text-align: center;
+            margin-top: 0;
+            color: rgba(1, 1, 1, 0.5);
+            font-weight: bolder;
+        }
+        .detail-container {
+            margin-left: 40px;
+        }
+        .detail-container p {
+            font-weight: bold;
+        }
+        span {
+            color: rgba(1, 1, 1, 0.3);
+        }
+        .btn-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn-container button {
+            padding: 10px 0px;
+            margin: 10px;
+            width: 100px; /* Set the desired width for the buttons */
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+
+        /* CENTER FLEXBOX */
+        .flexbox-center {
+            flex-basis: 400px;
+            height: 98vh;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+        .flexbox-center-div1 {
+            background-image: linear-gradient(to right, #38b29d, #218dd6);
+            margin: 4px;
+        }
+        .flexbox-center h1 {
+            text-align: center;
+            color: white;
+        }
+        .flex2-p {
+            text-align: center;
+            margin-top: 0;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: bolder;
+        }
+        .flex-2-p2 {
+            color: rgba(0, 0, 0, 0.3);
+            font-weight: bolder;
+            text-align: center;
+        }
+        .btn-container2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+        .btn-container2 button {
+            padding: 20px 0px;
+            margin: 10px;
+            width: 150px; /* Set the desired width for the buttons */
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            color: white;
+            font-size: large;
+            background-image: linear-gradient(to right, #38b29d, #218dd6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flexbox">
+            <h1>Shared Hosting</h1>
+            <p class="flex1-p">$85/MONTH</p>
+            <div class="detail-container">
+                <p>250 <span>Email Addresses</span></p>
+                <p>125 <span>GB of Storage</span></p>
+                <p>140 <span>Databases</span></p>
+                <p>60 <span>Domains</span></p>
+                <p>24/7 <span>Unlimited Support</span></p>
+            </div>
+            <hr>
+            <div class="btn-container">
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <div class="flexbox-center">
+            <div class="flexbox-center-div1">
+                <h1>WordPress Hosting</h1>
+                <p class="flex2-p">$59/YEAR</p>
+            </div>
+            <p class="flex-2-p2">This is a perfect choice for small<br />
+                businesses and startups</p>
+            <hr>
+            <div class="detail-container">
+                <p>150 <span>Email Addresses</span></p>
+                <p>65 <span>GB of Storage</span></p>
+                <p>60 <span>Databases</span></p>
+                <p>30 <span>Domains</span></p>
+                <p>24/7 <span>Unlimited Support</span></p>
+            </div>
+            <hr>
+            <div class="btn-container2">
+                <button>Order Now</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <h1>Reseller Hosting</h1>
+            <p class="flex1-p">$85/ONE-TIME</p>
+            <div class="detail-container">
+                <p>250 <span>Email Addresses</span></p>
+                <p>125 <span>GB of Storage</span></p>
+                <p>140 <span>Databases</span></p>
+                <p>60 <span>Domains</span></p>
+                <p>24/7 <span>Unlimited Support</span></p>
+            </div>
+            <hr>
+            <div class="btn-container">
+                <button>Order Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
