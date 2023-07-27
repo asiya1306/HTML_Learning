@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Centered Buttons</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 1000px;
+            height: 500px;
+            border: 2px solid #333;
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        .top-centered {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .bottom-centered {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .left-centered {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .right-centered {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        .centered{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="top-centered">Top</button>
+        <button class="bottom-centered">Bottom</button>
+        <button class="left-centered">Left</button>
+        <button class="right-centered">Right</button>
+        <button class="centered">Center</button>
+
+    </div>
+</body>
+
+</html>
