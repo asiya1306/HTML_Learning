@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Armstrong Number Check</title>
+</head>
+
+<body>
+    <script>
+        const num = parseInt(prompt('Enter a number:'));
+        let sum = 0;
+        let n = num;
+        const power = num.toString().length;
+
+        while (n > 0) {
+            const res = n % 10;
+            console.log("res", res)
+            //sum = sum + Math.pow(res, power);
+            sum = sum + res ** power
+            console.log("sum", sum)
+            n = Math.floor(n / 10);
+            console.log("n", n)
+
+        }
+
+        if (sum === num) {
+            alert('Armstrong number');
+        } else {
+            alert('Not Armstrong number');
+        }
+    </script>
+</body>
+
+</html>

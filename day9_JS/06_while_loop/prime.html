@@ -1,0 +1,29 @@
+<!-- Number which is divided by 1 or itself is known as prime number -->
+<html>
+    <head>
+        <title>Prime number</title>
+    </head>
+    <body>
+        <script>
+            let num,i,flag;
+            i=2;
+            flag=true
+            num=parseInt(prompt("enter number to check prime or not"));
+            
+            while(i<num){
+                if(num%i==0){
+                    flag=false;
+                    break;
+                }
+            i=i+1
+            }
+            if(flag==true){
+                document.write("<h3>"+num+" is a Prime Number.</h3>");
+            }
+            else{
+                document.write("<h3>"+num+" is Not A Prime Number.<br/>");
+            }
+            
+        </script>
+    </body>
+</html>

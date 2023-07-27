@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Prime, Armstrong and Palindrome</title>
+</head>
+
+<body>
+    <input type="text" id="num1" placeholder="Num1" /> <br /><br />
+    <button onclick="prime()">Prime</button>
+    <button onclick="armstrong()">Armstrong</button>
+    <button onclick="palindrome()">Palindrome</button>
+
+    <script>
+        function prime() {
+            const num1 = parseInt(document.getElementById("num1").value);
+            let i,flag;
+            i=2;
+            flag=true
+            
+            while(i < num1){
+                if(num1 % i == 0){
+                    flag=false;
+                    break;
+                }
+            i=i+1
+            }
+            if(flag==true){
+                document.write("<h3>"+num1+" is a Prime Number.</h3>");
+            }
+            else{
+                document.write("<h3>"+num1+" is Not A Prime Number.<br/>");
+            }
+        }
+
+        function armstrong() {
+            const num1 = parseInt(document.getElementById("num1").value);
+            let sum = 0;
+            let n = num1;
+            const power = num1.toString().length;
+
+            while (n > 0) {
+                const res = n % 10;
+                sum = sum + res ** power
+                n = Math.floor(n / 10);
+            }
+
+            if (sum === num1) {
+                alert('Armstrong number');
+            } else {
+                alert('Not Armstrong number');
+            }
+        }
+
+        function palindrome() {
+            const num1 = parseInt(document.getElementById("num1").value);
+            let n = num1.toString();
+            reverse=0;
+
+            while (n>0){
+                const res = n%10;
+                reverse = reverse * 10 + res;
+                n = Math.floor(n/10);
+            }
+
+            if (reverse == num1) {
+                alert('Palindrome number');
+            } else {
+                alert('Not Palindrome number');
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

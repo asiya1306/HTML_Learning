@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Arithmetic Calculator</title>
+    </head>
+    <body>
+        <script>
+            let num1,num2,choice;
+            num1=parseInt(prompt("enter first number"));
+            num2=parseInt(prompt("enter second number"));
+            choice = parseInt(prompt("enter Choice \n 1.Addition \n 2.Subtraction \n 3.Multiplication \n 4.Division"))
+            
+            if(choice==1){
+                alert(num1+num2);
+            }
+            else if(choice==2){
+                alert(num1-num2);
+            }
+            else if(choice==3){
+                alert(num1*num2);
+            }
+            else if(choice==4){
+                alert(num1/num2)
+            }
+            else{
+                alert("please enter valid choice")
+            }
+            
+        </script>
+    </body>
+</html>
