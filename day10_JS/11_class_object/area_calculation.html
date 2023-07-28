@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Class and Object</title>
+    </head>
+    <body>
+        <script>
+            // area of traingle
+            class triangle {                //class
+                getData(l,h) {
+                    this.l = l;
+                    this.h = h;
+                }
+                cal(){
+                    this.a=0.5*this.l*this.h                    
+                }
+                display(){
+                    document.write("<h3>Area of traingle " +this.a+ "</h3>");
+                }
+            }
+            const c = new triangle();       //Object
+            c.getData(10,20);
+            c.cal();
+            c.display();
+
+            //area of sqaure
+            class sqaure {
+                getData1(s) {
+                    this.s = s;
+                }
+                cal1(){
+                    this.a=this.s*this.s                  
+                }
+                display1(){
+                    document.write("<h3>Area of sqaure " +this.a+ "</h3>");
+                }
+            }
+            const tObj = new sqaure();
+            tObj.getData1(30);
+            tObj.cal1();
+            tObj.display1();
+
+            //area of rectangle
+            class rectangle {
+                getData2(l,b) {
+                    this.l = l;
+                    this.b = b;
+                }
+                cal2(){
+                    this.a=this.l*this.b
+                }
+                display2(){
+                    console.log(this.a);
+                    document.write("<h3>Area of rectangle " +this.a+ "</h3>");
+                }
+            }
+            const rObj = new rectangle();
+            rObj.getData2(10,20);
+            rObj.cal2();
+            rObj.display2();
+        </script>
+    </body>
+</html>
