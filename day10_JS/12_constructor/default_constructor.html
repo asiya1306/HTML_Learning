@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Default Constructor</title>
+    </head>
+    <body>
+        <script>
+            // area of circle
+            class circle {
+                constructor() {
+                    this.r = 10;
+                }
+                cal(){
+                    this.a=3.14*this.r*this.r;                  
+                }
+                display(){
+                    document.write("<h3>Area of circle " +this.a+ "</h3>");
+                }
+            }
+            const c = new circle();
+            c.cal();
+            c.display();
+        </script>
+    </body>
+</html>
