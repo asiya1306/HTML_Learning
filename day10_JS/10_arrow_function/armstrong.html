@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Armstrong- Arrow Function</title>
+</head>
+
+<body>
+    <input type="text" id="num1" placeholder="Enter number" /><br /><br />
+
+    <input type="submit" value="Armstrong" id="btn1"
+        onclick="isArmstrong(parseInt(document.getElementById('num1').value))" />
+
+    <script>
+        const isArmstrong = (num) => {
+            let sum = 0;
+            let n = num;
+            const power = num.toString().length;
+            while (n > 0) {
+                const res = n % 10;
+                console.log("res", res)
+                //sum = sum + Math.pow(res, power);
+                sum = sum + res ** power
+                console.log("sum", sum)
+                n = Math.floor(n / 10);
+                console.log("n", n)
+            }
+
+            if (sum === num) {
+                alert('Armstrong number');
+            } else {
+                alert('Not Armstrong number');
+            }
+        }    
+    </script>
+</body>
+
+</html>
