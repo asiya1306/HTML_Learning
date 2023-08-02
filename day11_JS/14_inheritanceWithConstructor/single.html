@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Single Inheritance With Constructor</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(name, age) {
+                this.age = age;
+                this.name = name;
+            }
+            display() {
+                document.write("<h5>This is Parent class"+ "</h5>");
+                document.write("<h3>Name is " + this.name + " age is " + this.age + "</h3>");
+            }
+        }
+
+        class Student extends Person {
+            constructor(name, age, marks) {
+                super(name, age);
+                this.marks = marks;
+            }
+            display1() {
+                super.display();
+                document.write("<h5>This is child class"+ "</h5>");
+                document.write("<h3>Marks are " + this.marks + "</h3>");
+            }
+        }
+         let studObj = new Student("John", 20,56);
+         studObj.display1();
+    </script>
+</body>
+
+</html>
