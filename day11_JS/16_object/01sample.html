@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Object in JS</title>
+    </head>
+    <body>
+        <script>
+            const stud = {
+                id:1,
+                name:'asiya'
+            }
+            console.log(stud.id)
+            console.log(stud['name'])
+
+            const add = {
+                a:0,
+                b:0,
+                c:0,
+                sum : function() {
+                    this.c = this.a+this.b
+                }
+            }
+            add["a"] = 100;
+            add["b"] = 300;
+            add.sum ();
+            console.log(add.c)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <title>Area of Circle - Object</title>
+</head>
+
+<body>
+    <script>
+        const circle = {
+            r: 0,
+            ar: 0,
+            area: function () {
+                this.ar = 3.14 * this.r * this.r;
+            }
+        }
+        circle["r"] = 100;
+        circle.area();
+        console.log(circle.ar)
+    </script>
+</body>
+
+</html>
