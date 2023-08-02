@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Addition of Two Array</title>
+</head>
+
+<body>
+    <script>
+        let arr1 = [6, 2, 8, 6, 4]
+        let arr2 = [3, 5, 7, 5, 10];
+        document.write("Array 1 "+arr1+"<br/>")
+        document.write("Array 2 "+arr2+"<br/>")
+
+        if (arr1.length !== arr2.length) {
+            alert("Arrays must have the same length for addition.")
+        }
+        else {
+            let result = [];
+            for (let i = 0; i < arr1.length; i++) {
+                result.push(arr1[i] + arr2[i])
+            }
+            document.write("Result Array is "+result)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Array in JS</title>
+</head>
+
+<body>
+    <script>
+        //using for loop
+        let a = new Array(2, 3, 4, "Asiya", false)
+        for (let i = 0; i < a.length; i++) {
+            document.write("Element at index " + i + " is: " + a[i] + "<br/>");
+        }
+        document.write("<br/>");
+
+        //using forEach loop
+        let b = [8, 2, 4, 9, 1, 2]
+        b.forEach((element, index) => {
+            document.write("Element at index " + index + " is: " + element + "<br/>");
+        });
+
+        // Using Aray.from method
+        let name = 'asiya';
+        let c = Array.from(name);
+        document.write("<h3/>" + c + "</h3>")
+    </script>
+</body>
+
+</html>
