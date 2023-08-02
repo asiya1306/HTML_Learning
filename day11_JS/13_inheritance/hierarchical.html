@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Hierarchical Inheritance</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            getData(name, age) {
+                this.age = age;
+                this.name = name;
+            }
+            display() {
+                // document.write("<h5>This is Parent class"+ "</h5>");
+                document.write("<h3>Person Name is " + this.name + " and age is " + this.age + "</h3>");
+            }
+        }
+
+        class Student extends Person {
+            getStud(name, age, marks) {
+                super.getData(name, age);
+                this.marks = marks;
+            }
+            displayStud() {
+                super.display();
+                // document.write("<h5>This is first child class"+ "</h5>");
+                document.write("<h3>Student Marks are " + this.marks + "</h3><br/>");
+            }
+        }
+
+        class Employee extends Person{
+            getEmp(name,age,salary){
+                super.getData(name,age);// calling the parent function to set data for employee object
+                this.salary = salary;
+            }
+            displayEmp(){
+                super.display();
+                // document.write("<h5>This is second child class"+ "</h5>");
+                document.write("<h3>Employee Salary is " + this.salary + "</h3>");
+            }
+        }
+         let studObj = new Student();
+         studObj.getStud("John", 20,56);
+         studObj.displayStud();
+
+         let empObj = new Employee();
+         empObj.getEmp('Jane',40,7891);
+         empObj.displayEmp();
+    </script>
+</body>
+
+</html>

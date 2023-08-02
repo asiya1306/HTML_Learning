@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Multi-level Inheritance</title>
+</head>
+
+<body>
+    <script>
+        class Animal {
+            getAnimal(name){
+                this.name = name;
+            }
+            sayHello(){
+                document.write("<h5>hello, My name is "+ this.name+"</h5>");
+            }
+        }
+
+        class Dog extends Animal {
+            getDog(name,breed){
+                super.getAnimal(name);
+                this.breed = breed;
+            }
+            display(){
+                super.sayHello();
+                document.write("<h5>and my breed is " +this.breed+"</h5>")
+            }
+        }
+
+        class Chihuahua extends Dog {
+            getDetails(name,breed,color) {
+                super.getDog(name,breed);
+                this.color = color;
+            }
+            showColor() { 
+                super.display();
+                document.write("<h5>my color is " +this.color +"</h5>")
+            }
+        }
+        let obj = new Chihuahua();
+        obj.getDetails('rocky','Chihuahua','White');
+        obj.showColor();
+    </script>
+</body>
+
+</html>
